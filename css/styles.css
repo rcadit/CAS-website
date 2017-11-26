@@ -1,0 +1,95 @@
+.mission-statement-wrapper {
+    
+    height: 100vh;
+    padding-top: 10%;
+    background-color: #dff0d8; 
+    background-attachment: fixed;
+    
+  }
+  nav{
+     background-color: #aedd31; 
+    
+
+  }
+  .big-fact{
+    font-size: 90px;
+    padding: 10%;
+  
+  }
+#first-panel-header{
+  padding-top: 10%;
+}
+#first-panel-text{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+#first-panel-buttons{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.first-panel{
+  height:100vh;
+  background-image: url("images/nixon.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center; 
+}
+.respect-wrapper{
+  
+  height: 100vh;
+  background-color: #fbfbfb;
+  
+}
+.responsibility-wrapper{
+  height: 100vh;
+ 
+}
+.purpose-wrapper{
+  
+  height: 100vh;
+  background-color: #fbfbfb;
+}
+.our-contribution-wrapper{
+  padding: 10%;
+  height:100vh;
+  background-color: #adb;
+}
+.castv-about-us-wrapper{
+  padding: 10%;
+  height:100vh;
+  background-color: #fbfbfb;
+}
+.cas-tv-gallery-wrapper{
+  
+  background-color: #fbfbfb;
+}
+.what-can-you-do-wrapper{
+  padding: 10%;
+  height:50vh;
+  background-color: #fbfbfb;
+}
+.footer{
+  height: 10vh;
+  background-color:#aedd31; 
+}
+.btn-primary{
+  background-color: #4cc0a0;
+  border-color: #4cc0a0;
+
+  
+}
+.btn-primary:hover{
+  background-color: #399179;
+  border-color: #399179;
+}
+.title{
+  color: white;
+  font-size: xx-large;
+  font-variant: bold;
+  
+}
+.main-btn{
+  font-family: 'Roboto','Open Sans';
+  font-size: 250%;
+}

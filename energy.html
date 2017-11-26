@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Climate Force</title>
+ 
+
+
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/full-slider.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/styles.css">
+      
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light  navbar-fixed-top" role = "navigation" >
+    <div class = "container">
+      <a class = "navbar-brand" href = "#"> 
+          <img src="images/logo.png"  height="50vh">   
+          
+      </a>
+    </div>
+    </nav>
+  <div class = "mission-statement-wrapper">
+      <div id = "mission-statement" class = "container text-center">
+        <div class="row text-center">
+      <div class="col text-center">
+        <h1 id = "daily-usage"> </h1>
+      </div>
+    </div>
+    <div class = "row text-center">
+      <div class = "col">
+    <div id = "fact"> <strong><h1 class ="big-fact"></h1></strong></div>
+  </div>
+    </div>
+        <div class = "row text-center">
+          <h3> is how many years you could chage your phone for with the amount of energy used yesterday</h3>
+        </div>
+        <div class = "row text-center"> 
+          <div class = "col">
+          <button class = "btn btn-primary"> Find out more</button>
+        </div>
+        </div>
+      </div>
+  </div> 
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <!-- Slide One - Set the background image for this slide in the line below -->
+          <div class="carousel-item active" style="background-image: url('http://placehold.it/1900x1080')">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>CAS TV</h3>
+              <p>They do stuff</p>
+              <button class="btn btn-primary"> Learn More </button>
+            </div>
+          </div>
+          <!-- Slide Two - Set the background image for this slide in the line below -->
+          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Migartion Project</h3>
+              <p>Some fashion thing</p>
+              <button class="btn btn-primary"> Learn More </button>
+            </div>
+          </div>
+          <!-- Slide Three - Set the background image for this slide in the line below -->
+          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Climate Force</h3>
+              <p>I made this webiste</p>
+              <button class="btn btn-primary"> Learn More </button>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <iframe src="https://v4.en-trak.com/widget/index.html#/widget/a6b98269a0e30ebd6dfb44924e9fc6c0344a1c5d/1615/en" style="border: none; width: 100vw; height: 100vh;"></iframe>
+
+ 
+
+
+
+
+
+
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/popper/popper.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script>
+  $today = new Date();
+$yesterday = new Date($today);
+$yesterday.setDate($today.getDate() - 1); //setDate also supports negative values, which cau
+var $dd = $yesterday.getDate();
+var $mm = $yesterday.getMonth()+1; //January is 0!
+
+var $yyyy = $yesterday.getFullYear();
+if($dd<10){$dd='0'+dd} if($mm<10){$mm='0'+$mm} $yesterday = $yyyy+'-'+$mm+'-'+$dd;
+var header = document.querySelector('header');
+var section = document.querySelector('section');
+var requestURL = 'https://v4.en-trak.com/apis/usages/tts/total/?date='+$yesterday + '&format=json&period=day';
+var request = new XMLHttpRequest();
+request.open('GET', requestURL);
+
+request.setRequestHeader("Authorization", "Bearer wRyu7NfHMzdfWFR5QuxKiT7YtxPTcb");
+request.responseType= 'text';
+request.send();
+
+
+
+request.onload = function() {
+  var dataText = request.response;
+    console.log(dataText);
+    var data = JSON.parse(dataText); // convert it to an object
+    var KWHday = data['query_day'];
+    var KWHdayInt = parseInt(KWHday.total_kwh);
+    console.log(KWHdayInt);
+    var phonePowerYear = Math.round((KWHdayInt/0.0066)/1000000)*100 /100;
+    
+    $(".big-fact").text(phonePowerYear + " million times");
+}
+
+</script>
+</body>
+</html>
+
