@@ -18,6 +18,13 @@
 }
 .btn-outline-primary{
   margin-top: 10%;
+ border-color: #aedd31;
+color: #aedd31;
+}
+.btn-outline-primary:hover{
+  color: white;
+  background-color: #aedd31;
+  border-color: #aedd31;
 }
 .button-row{
 
@@ -83,4 +90,9 @@
 .main-btn{
   font-family: 'Roboto','Open Sans';
   font-size: 250%;
+}
+.first-panel{
+background-image: url("https://scontent.fsin2-1.fna.fbcdn.net/v/t31.0-8/23467479_1616676071724790_8231694728842514499_o.jpg?oh=344731d48fa28bedf5f5f1a935a768d7&oe=5AD4FF1D");
+background-attachment: fixed;
+background-size: cover;
 }
