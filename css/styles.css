@@ -16,21 +16,25 @@
     padding: 10%;
   
   }
-#first-panel-header{
-  padding-top: 10%;
+.header-row{
+  padding-top: 30vh;
 }
 #first-panel-text{
   padding-top: 5%;
   padding-bottom: 5%;
 }
+.btn-primary{
+  margin-top: 10%;
+}
 .button-row{
-  padding-top: 10%;
+
   padding-left: 20%;
   padding-right: 20%;
+  padding-bottom: 30vh;
 }
 .first-panel{
   height:100vh;
-  background-image: url("images/nixon.jpg");
+  
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
