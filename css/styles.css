@@ -1,11 +1,4 @@
-.mission-statement-wrapper {
-    
-    height: 100vh;
-    padding-top: 10%;
-    background-color: #dff0d8; 
-    background-attachment: fixed;
-    
-  }
+
   nav{
      background-color: #aedd31; 
     
@@ -23,7 +16,7 @@
   padding-top: 5%;
   padding-bottom: 5%;
 }
-.btn-primary{
+.btn-outline-primary{
   margin-top: 10%;
 }
 .button-row{
@@ -32,14 +25,7 @@
   padding-right: 20%;
   padding-bottom: 30vh;
 }
-.first-panel{
-  height:100vh;
-  
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center; 
-}
+
 .respect-wrapper{
   
   height: 100vh;
