@@ -30,7 +30,8 @@ body{
   padding-bottom: 5%;
 }
 #first-panel-header{
-  font-size: 300%;
+  font-size: 96 px;
+  font-weight: 300;
   
 }
 .btn-outline-primary{
