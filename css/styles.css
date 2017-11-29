@@ -29,19 +29,19 @@ body{
   padding-top: 5%;
   padding-bottom: 5%;
 }
-#first-panel-header{
+/* #first-panel-header{
   font-size: 96 px;
   font-weight: 300;
   
-}
+} */
 .btn-outline-primary{
   margin-top: 10%;
  border-color: #aedd31;
 color: #aedd31;
 opacity: 1;
-padding-left: 20px;
+/* padding-left: 20px;
 padding-right: 20px;
-font-size: 20px;
+font-size: 20px; */
 
 }
 .btn-outline-primary:hover{
@@ -68,22 +68,26 @@ font-size: 20px;
   height: 100vh;
  
 }
+.team-wrapper{
+  height: 100vh;
+ 
+}
 .purpose-wrapper{
   
   height: 100vh;
   background-color: #fbfbfb;
 }
-.our-contribution-wrapper{
+.contribution-wrapper{
   padding: 10%;
   height:100vh;
   background-color: #adb;
 }
-.castv-about-us-wrapper{
+.about-us-wrapper{
   padding: 10%;
   height:100vh;
   background-color: #fbfbfb;
 }
-.cas-tv-gallery-wrapper{
+.gallery-wrapper{
   
   background-color: #fbfbfb;
 }
