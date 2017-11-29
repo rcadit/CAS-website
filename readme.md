@@ -1,5 +1,1 @@
-This is the CAS website thing. 
-Don't mess up (Declan)
-
-## this is my work
-smth
+A website made for our CAS project about ssaving the environment. Utilises En Trak to show electricity consumption.
