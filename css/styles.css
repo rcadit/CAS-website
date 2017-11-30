@@ -1,14 +1,27 @@
 
   nav{
-     background-color: #aedd31; 
+     background-color: #78A22F; 
     
 
+  }
+body{
+  font-family: 'Roboto', sans-serif;
+}
+  .dark-overlay{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  
   }
   .big-fact{
     font-size: 90px;
     padding: 10%;
   
   }
+
 .header-row{
   padding-top: 30vh;
 }
@@ -16,21 +29,41 @@
   padding-top: 5%;
   padding-bottom: 5%;
 }
+/* #first-panel-header{
+  font-size: 96 px;
+  font-weight: 300;
+  
+} */
 .btn-outline-primary{
   margin-top: 10%;
  border-color: #aedd31;
 color: #aedd31;
+opacity: 1;
+padding-left: 15px;
+padding-right: 15px;
+
+
+
+}
+.thread-button-row{
+  padding-top: 5vh;
+}
+.thread-landing{
+  padding-top: 15vh;
+  
 }
 .btn-outline-primary:hover{
-  color: white;
-  background-color: #aedd31;
-  border-color: #aedd31;
+  color: #fbfbfb;
+  background-color: #78A22F;
+  border-color: #78A22F;
+  opacity: 1;
 }
 .button-row{
 
   padding-left: 20%;
   padding-right: 20%;
   padding-bottom: 30vh;
+  opacity: 1;
 }
 
 .respect-wrapper{
@@ -43,22 +76,26 @@ color: #aedd31;
   height: 100vh;
  
 }
+.team-wrapper{
+  height: 100vh;
+ 
+}
 .purpose-wrapper{
   
   height: 100vh;
   background-color: #fbfbfb;
 }
-.our-contribution-wrapper{
+.contribution-wrapper{
   padding: 10%;
   height:100vh;
   background-color: #adb;
 }
-.castv-about-us-wrapper{
+.about-us-wrapper{
   padding: 10%;
   height:100vh;
   background-color: #fbfbfb;
 }
-.cas-tv-gallery-wrapper{
+.gallery-wrapper{
   
   background-color: #fbfbfb;
 }
@@ -69,7 +106,7 @@ color: #aedd31;
 }
 .footer{
   height: 10vh;
-  background-color:#aedd31; 
+  background-color:#78A22F; 
 }
 .btn-primary{
   background-color: #4cc0a0;
@@ -87,12 +124,11 @@ color: #aedd31;
   font-variant: bold;
   
 }
-.main-btn{
-  font-family: 'Roboto','Open Sans';
-  font-size: 250%;
-}
+
 .first-panel{
 background-image: url("https://scontent.fsin2-1.fna.fbcdn.net/v/t31.0-8/23467479_1616676071724790_8231694728842514499_o.jpg?oh=344731d48fa28bedf5f5f1a935a768d7&oe=5AD4FF1D");
 background-attachment: fixed;
 background-size: cover;
+color: #fbfbfb;
+height: 100vh;
 }
