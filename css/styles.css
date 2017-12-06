@@ -68,6 +68,7 @@ body{
 
  .thread-button-row{
   padding-top: 5vh;
+  
 }
 .thread-landing{
   padding-top: 15vh;
@@ -90,14 +91,18 @@ border-radius:0;
   border-color: #7AC142;
 
 }
+
 .button-row{
 
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 5%;
+  padding-right: 5%;
   padding-bottom: 30vh;
   opacity: 1;
 }
-
+.index-button-row{
+  padding-left: 15%;
+  padding-right: 15%;
+}
 .respect-wrapper{
   
   height: 100vh;
@@ -138,8 +143,8 @@ border-radius:0;
  
 }
 .gallery-wrapper{
-  
-  background-color: #fbfbfb;
+  height: 100vh;
+
 }
 .what-can-you-do-wrapper{
 
@@ -162,6 +167,7 @@ border-radius:0;
   border-radius: 50%;
   height: 50%;
   width: 50%;
+  align-content: center;
   display: inline-block;
 }
 .name{
