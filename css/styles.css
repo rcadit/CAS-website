@@ -25,7 +25,9 @@ background-color: #2C2F32;
 
   nav{
      background-color: #7AC142; 
-    
+     font-size: 14px;
+     text-transform: uppercase;
+     color: #F1F2E2;
 
   }
 body{
@@ -42,48 +44,51 @@ body{
     height: 100%;
   
   }
-  .big-fact{
-    font-size: 90px;
-    padding: 10%;
   
-  }
-
-.header-row h1{
+.header-row{
   padding-top: 30vh;
+  
+}
+.header-row h1{
   width: 100%;
-  font-size: 64px;
+  font-size: 48px;
+  text-transform: uppercase;
+  padding-bottom: 5vh;
 
+}
+.team-row{
+  padding-top: 5vh;
+  padding-top: 5vh;
 }
 #first-panel-text{
-  padding-top: 5%;
+
   padding-bottom: 5%;
+  font-size: 24.5px;
 }
- #first-panel-header{
-  text-transform: capitalize;
-  
-} 
-.btn-outline-primary{
-  margin-top: 10%;
- border-color: #7AC142;
-color: #7AC142;
-opacity: 1;
-padding: 15px;
 
-
-
-}
-.thread-button-row{
+ .thread-button-row{
   padding-top: 5vh;
 }
 .thread-landing{
   padding-top: 15vh;
   
 }
+.btn-outline-primary{
+ border-color: #7AC142;
+color: #7AC142;
+display:inline-block;
+width:200px;
+padding: 15px;
+text-transform: uppercase;
+border-radius:0;
+
+}
+
 .btn-outline-primary:hover{
-  color: #fbfbfb;
+  color: #F1F2E2;
   background-color: #7AC142;
   border-color: #7AC142;
-  opacity: 1;
+
 }
 .button-row{
 
@@ -105,10 +110,9 @@ padding: 15px;
  
 }
 .who-we-are-wrapper{
-
-  margin-bottom: 15vh;
-  height:70vh;
-  background-color: #dbdb9b;
+  height:100vh;
+  background-color: #F1F2E2;
+  color:#2C2F32;
  
 }
 .purpose-wrapper{
@@ -118,44 +122,51 @@ padding: 15px;
   color:#2C2F32;
 }
 .contribution-wrapper{
-  padding: 10%;
-  height:100vh;
 
+  height:100vh;
+  background-color: #F1F2E2;
+  color:#2C2F32;
 }
 .about-us-wrapper{
   margin-top: 15vh;
   padding-bottom: 15vh;
   height:70vh;
-  background-color: #fbfbfb;
+  background-color: #F1F2E2;
+}
+.team-wrapper{
+ padding-bottom: 5vh;
+ 
 }
 .gallery-wrapper{
   
   background-color: #fbfbfb;
 }
 .what-can-you-do-wrapper{
-  padding: 10%;
+
   height:50vh;
-  background-color: #fbfbfb;
+ 
 }
 .footer{
-  height: 10vh;
+  height: 5vh;
   background-color:#2C2F32; 
+  padding-top: 5px;
 }
-.btn-primary{
-  background-color: #4cc0a0;
-  border-color: #4cc0a0;
+.footer span{
+  font-size: 11px;
+  color: #F1F2E2;
+  display: inline-block;
+  text-transform: uppercase;
 
-  
 }
-.btn-primary:hover{
-  background-color: #399179;
-  border-color: #399179;
+.profile-image{
+  border-radius: 50%;
+  height: 50%;
+  width: 50%;
+  display: inline-block;
 }
-.title{
-  color: white;
-  font-size: xx-large;
-  font-variant: bold;
-  
+.name{
+  padding-top: 10px;
+  text-align: center;
 }
 
 .first-panel{
@@ -163,4 +174,9 @@ background-attachment: fixed;
 background-size: cover;
 color: #fbfbfb;
 height: 100vh;
+
+}
+.image-row{
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
