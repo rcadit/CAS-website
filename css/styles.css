@@ -1,14 +1,40 @@
+/* Colour Palette
+#F1F2E2 - Light Shades (text/background)
+#85A38B - Light accent
+#7AC142 - Main colour
+#7F6E5A - Dark accent
+#2C2F32 - dark shade (text/background) 
+
+DARK TEXT/LIGHT BACKGROUND
+background-color: #F1F2E2;
+  color:#2C2F32;
+
+  LIGHT TEXT/DARK BACKGROUND
+background-color: #2C2F32;
+  color:#F1F2E2;
+
+
+
+
+*/
+
+
+
+
+
 
   nav{
-     background-color: #78A22F; 
+     background-color: #7AC142; 
     
 
   }
 body{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans';
+  color: #F1F2E2;
+  background-color: #2C2F32;
 }
   .dark-overlay{
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(21, 21, 22, 0.7);
     position: absolute;
     top: 0;
     left: 0;
@@ -22,25 +48,26 @@ body{
   
   }
 
-.header-row{
+.header-row h1{
   padding-top: 30vh;
+  width: 100%;
+  font-size: 64px;
+
 }
 #first-panel-text{
   padding-top: 5%;
   padding-bottom: 5%;
 }
-/* #first-panel-header{
-  font-size: 96 px;
-  font-weight: 300;
+ #first-panel-header{
+  text-transform: capitalize;
   
-} */
+} 
 .btn-outline-primary{
   margin-top: 10%;
- border-color: #aedd31;
-color: #aedd31;
+ border-color: #7AC142;
+color: #7AC142;
 opacity: 1;
-padding-left: 15px;
-padding-right: 15px;
+padding: 15px;
 
 
 
@@ -54,8 +81,8 @@ padding-right: 15px;
 }
 .btn-outline-primary:hover{
   color: #fbfbfb;
-  background-color: #78A22F;
-  border-color: #78A22F;
+  background-color: #7AC142;
+  border-color: #7AC142;
   opacity: 1;
 }
 .button-row{
@@ -69,30 +96,36 @@ padding-right: 15px;
 .respect-wrapper{
   
   height: 100vh;
-  background-color: #fbfbfb;
+  background-color: #F1F2E2;
+  color:#2C2F32;
   
 }
 .responsibility-wrapper{
   height: 100vh;
  
 }
-.team-wrapper{
-  height: 100vh;
+.who-we-are-wrapper{
+
+  margin-bottom: 15vh;
+  height:70vh;
+  background-color: #dbdb9b;
  
 }
 .purpose-wrapper{
   
   height: 100vh;
-  background-color: #fbfbfb;
+  background-color: #F1F2E2;
+  color:#2C2F32;
 }
 .contribution-wrapper{
   padding: 10%;
   height:100vh;
-  background-color: #adb;
+
 }
 .about-us-wrapper{
-  padding: 10%;
-  height:100vh;
+  margin-top: 15vh;
+  padding-bottom: 15vh;
+  height:70vh;
   background-color: #fbfbfb;
 }
 .gallery-wrapper{
@@ -106,7 +139,7 @@ padding-right: 15px;
 }
 .footer{
   height: 10vh;
-  background-color:#78A22F; 
+  background-color:#2C2F32; 
 }
 .btn-primary{
   background-color: #4cc0a0;
