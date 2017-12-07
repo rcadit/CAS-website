@@ -107,12 +107,12 @@
   <script>
     $today = new Date();
     $yesterday = new Date($today);
-    $yesterday.setDate($today.getDate() - 1); //setDate also supports negative values, which cau
+    $yesterday.setDate($today.getDate() - 1); 
     var $dd = $yesterday.getDate();
     var $mm = $yesterday.getMonth() + 1; //January is 0!
 
     var $yyyy = $yesterday.getFullYear();
-    if ($dd < 10) { $dd = '0' + dd } if ($mm < 10) { $mm = '0' + $mm } $yesterday = $yyyy + '-' + $mm + '-' + $dd;
+    if ($dd < 10) { $dd = '0' + $dd } if ($mm < 10) { $mm = '0' + $mm } $yesterday = $yyyy + '-' + $mm + '-' + $dd;
     var header = document.querySelector('header');
     var section = document.querySelector('section');
     var requestURL = 'https://v4.en-trak.com/apis/usages/tts/total/?date=' + $yesterday + '&format=json&period=day';
