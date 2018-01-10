@@ -21,9 +21,11 @@ background-color: #2C2F32;
 
 
 div{
-  border: solid red 1px;
+  
 }
-
+.text-center{
+  display: block;
+}
 
   nav{
      background-color: #7AC142; 
@@ -147,10 +149,7 @@ border-radius:0;
  padding-bottom: 5vh;
  
 }
-.gallery-wrapper{
-  height: 100vh;
 
-}
 .what-can-you-do-wrapper{
 
   height:50vh;
@@ -191,3 +190,13 @@ height: 100vh;
   padding-left: 10vw;
   padding-right: 10vw;
 }
+.carousel-item {
+  
+      min-height: 300px;
+      background: no-repeat center center scroll;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+  }
+  
