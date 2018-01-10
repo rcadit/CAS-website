@@ -20,7 +20,9 @@ background-color: #2C2F32;
 
 
 
-
+div{
+  border: solid red 1px;
+}
 
 
   nav{
@@ -36,7 +38,7 @@ body{
   background-color: #2C2F32;
 }
   .dark-overlay{
-    background-color: rgba(21, 21, 22, 0.7);
+    background-color: rgba(21, 21, 22, 0.6);
     position: absolute;
     top: 0;
     left: 0;
@@ -59,6 +61,9 @@ body{
 .team-row{
   padding-top: 5vh;
   padding-top: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #first-panel-text{
 
