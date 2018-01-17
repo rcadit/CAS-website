@@ -1,7 +1,7 @@
 /* Colour Palette
 #F1F2E2 - Light Shades (text/background)
 #85A38B - Light accent
-#7AC142 - Main colour
+#3FC380 - Main colour
 #7F6E5A - Dark accent
 #2C2F32 - dark shade (text/background) 
 
@@ -14,7 +14,7 @@ background-color: #2C2F32;
   color:#F1F2E2;
 
 
-
+3FC380
 
 */
 
@@ -28,11 +28,15 @@ div{
 }
 
   nav{
-     background-color: #7AC142; 
+     background-color: #3FC380; 
      font-size: 14px;
      text-transform: uppercase;
      color: #F1F2E2;
-
+     transition: top 0.2s ease-in-out;
+     height: 80px;
+  }
+  .nav-up {
+    top: -80px;
   }
 body{
   font-family: 'Open Sans';
@@ -40,7 +44,7 @@ body{
   background-color: #2C2F32;
 }
   .dark-overlay{
-    background-color: rgba(21, 21, 22, 0.6);
+    background-color: rgba(21, 21, 22, 0.4);
     position: absolute;
     top: 0;
     left: 0;
@@ -82,8 +86,8 @@ body{
   
 }
 .btn-outline-primary{
- border-color: #7AC142;
-color: #7AC142;
+ border-color: #3FC380;
+color: #3FC380;
 display:inline-block;
 width:200px;
 padding: 15px;
@@ -94,8 +98,8 @@ border-radius:0;
 
 .btn-outline-primary:hover{
   color: #F1F2E2;
-  background-color: #7AC142;
-  border-color: #7AC142;
+  background-color: #3FC380;
+  border-color: #3FC380;
 
 }
 
