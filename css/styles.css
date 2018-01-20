@@ -20,13 +20,20 @@ background-color: #2C2F32;
 
 
 
-div{
-  
-}
 .text-center{
   display: block;
 }
-
+.col-image{
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color:#2ffF32; 
+  color:#F1F2E2;
+}
+html{
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+}
   nav{
      background-color: #3FC380; 
      font-size: 14px;
@@ -38,10 +45,14 @@ div{
   .nav-up {
     top: -80px;
   }
+  .no-margin{
+    margin :0px !important;
+  }
 body{
   font-family: 'Open Sans';
   color: #F1F2E2;
   background-color: #2C2F32;
+  
 }
   .dark-overlay{
     background-color: rgba(21, 21, 22, 0.4);
@@ -63,6 +74,10 @@ body{
   text-transform: uppercase;
   padding-bottom: 5vh;
 
+}
+.row{
+  box-sizing: border-box;
+  margin:0;
 }
 .team-row{
   padding-top: 5vh;
@@ -124,6 +139,10 @@ border-radius:0;
 .responsibility-wrapper{
   height: 100vh;
  
+}
+.no-padding{
+  padding-right: 0px;
+  padding-left: 0px;
 }
 .who-we-are-wrapper{
   height:100vh;
