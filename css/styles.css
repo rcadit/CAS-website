@@ -203,7 +203,7 @@ border-radius:0;
 }
 
 .first-panel{
-background-attachment: fixed;
+/* background-attachment: fixed; */
 background-size: cover;
 color: #fbfbfb;
 height: 100vh;
