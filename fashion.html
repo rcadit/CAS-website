@@ -84,6 +84,8 @@
     </div>
 
     <div class="who-we-are-wrapper">
+        <div class = "row">
+            <div class = "col-xl-6 no-padding">
         <div class="container text-center " id="who-we-are">
             <div class="row header-row">
                 <div class="col">
@@ -105,47 +107,58 @@
 
         </div>
     </div>
+    <div class = "col-xl-6 no-padding">
+        <div class ="col-image" style ="background-image: url(http://www.unairan.org/wp-content/uploads/2017/06/Environment.jpg)"></div>
+    </div>
+    </div>
+    </div>
     <div class="team-wrapper">
-        <div class="container text-center " id="the-team">
-            <div class="row header-row team-row">
+        <div class = "row">
+                <div class = "col-xl-6 no-padding">
+                        <div class ="col-image" style ="background-image: url(http://www.unairan.org/wp-content/uploads/2017/06/Environment.jpg)"></div>
+                    </div>
+                    <div class = "col-xl-6 no-padding">
+        <div class="text-center team-column " id="the-team">
+                <div class = "col container">
+            <div class="row header-row ">
                 <div class="col">
                     <h1> The team </h1>
                 </div>
             </div>
 
-            <div class="row image-row">
-                <div class="col">
+            
+               
                     <div class="row text-center">
                         <img class="profile-image" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png">
                     </div>
                     <div class="row text-center name">
                         Ashley Chow
                     </div>
-                </div>
-                <div class="col">
+               
                     <div class="row text-center">
                         <img class="profile-image" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png">
                     </div>
                     <div class="row text-center name">
                         Isseya Thierry</div>
-                </div>
-                <div class="col">
+                
+                
                     <div class="row text-center">
                         <img class="profile-image" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png">
                     </div>
                     <div class="row text-center name">
                         Loanne Bobillier</div>
-                </div>
-                <div class="col">
+                
                     <div class="row text-center">
                         <img class="profile-image" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png">
                     </div>
                     <div class="row text-center name">
                         Thinn Aung</div>
-                </div>
-            </div>
+                    </div>
+            
 
         </div>
+    </div>
+    </div>
     </div>
 
     <div class="contribution-wrapper" id="fashion-contribution">
@@ -209,6 +222,45 @@
             }
         });
     </script>
+    <script>
+            var didScroll;
+            var lastScrollTop = 0;
+            var delta = 5;
+            var navbarHeight = $('nav').outerHeight();
+    
+            $(window).scroll(function (event) {
+                didScroll = true;
+            });
+    
+            setInterval(function () {
+                if (didScroll) {
+                    hasScrolled();
+                    didScroll = false;
+                }
+            }, 250);
+    
+            function hasScrolled() {
+                var st = $(this).scrollTop();
+    
+                // Make sure they scroll more than delta
+                if (Math.abs(lastScrollTop - st) <= delta)
+                    return;
+    
+                // If they scrolled down and are past the navbar, add class .nav-up.
+                // This is necessary so you never see what is "behind" the navbar.
+                if (st > lastScrollTop && st > navbarHeight) {
+                    // Scroll Down
+                    $('nav').removeClass('nav-down').addClass('nav-up');
+                } else {
+                    // Scroll Up
+                    if (st + $(window).height() < $(document).height()) {
+                        $('nav').removeClass('nav-up').addClass('nav-down');
+                    }
+                }
+    
+                lastScrollTop = st;
+            }
+        </script>
 </body>
 
 </html>

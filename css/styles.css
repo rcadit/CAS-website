@@ -91,6 +91,10 @@ body{
   padding-bottom: 5%;
   font-size: 24.5px;
 }
+.team-column{
+  height:100vh;
+  max-height: 100vh;
+}
 
  .thread-button-row{
   padding-top: 5vh;
@@ -168,10 +172,7 @@ border-radius:0;
   height:70vh;
   background-color: #F1F2E2;
 }
-.team-wrapper{
- padding-bottom: 5vh;
- 
-}
+
 
 .what-can-you-do-wrapper{
 
