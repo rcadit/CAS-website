@@ -29,6 +29,10 @@ background-color: #2C2F32;
   background-size: cover;
   background-color:#2ffF32; 
   color:#F1F2E2;
+  
+}
+.rotated{
+  transform: rotate(90deg);
 }
 html{
   box-sizing:border-box;
@@ -147,6 +151,7 @@ border-radius:0;
 .no-padding{
   padding-right: 0px;
   padding-left: 0px;
+  max-height: 100vh;
 }
 .who-we-are-wrapper{
   height:100vh;
@@ -179,6 +184,7 @@ border-radius:0;
   height:50vh;
  
 }
+
 .footer{
   height: 5vh;
   background-color:#2C2F32; 
@@ -193,8 +199,7 @@ border-radius:0;
 }
 .profile-image{
   border-radius: 50%;
-  height: 50%;
-  width: 50%;
+ max-height: 15vh;
   align-content: center;
   display: inline-block;
 }
@@ -204,12 +209,19 @@ border-radius:0;
 }
 
 .first-panel{
-/* background-attachment: fixed; */
+ background-attachment: fixed;
 background-size: cover;
 color: #fbfbfb;
 height: 100vh;
 
 }
+/* .first-image{
+  background-attachment: scroll  !important;
+  height: 100vh;
+  background-size: cover;
+  background-color:#2ffF32; 
+  color:#F1F2E2;
+} */
 .image-row{
   padding-left: 10vw;
   padding-right: 10vw;
