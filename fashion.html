@@ -41,7 +41,7 @@
 
     </nav>
 
-    <div class="text-center first-panel" style="background-image: url(images/threadsLanding.jpg)">
+    <div class="text-center first-panel" style="background-image: url(images/threadsLanding.jpg)" id = "first-panel"> 
         <div class="dark-overlay"></div>
         <div class="thread-landing">
             <div class="container animated fadeInDown">
@@ -107,9 +107,11 @@
 
         </div>
     </div>
+    
     <div class = "col-xl-6 no-padding">
-        <div class ="col-image first-image" style ="background-image: url(http://www.unairan.org/wp-content/uploads/2017/06/Environment.jpg)"></div>
+        <div class ="col-image first-image" id = "first-image" style ="background-image: url(http://www.unairan.org/wp-content/uploads/2017/06/Environment.jpg)"></div>
     </div>
+
     </div>
     </div>
     <div class="team-wrapper">
@@ -217,13 +219,6 @@
  
     
 
-    <div class="footer">
-            <div class="container text-center">
-                <span>(Basically) Designed and Coded by Adit Roychowdhury (+ Declan)</span>
-                <span>Tanglin Trust School</span>
-            </div>
-        </div>
-
 
 
 
@@ -243,6 +238,17 @@
                 }, 1600);
             }
         });
+    </script>
+    <script>
+        $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+    var os = $('#first-panel').offset().top;
+    var ht = $('#first-panel').height();
+    if(scroll > os + ht){
+        $('#first-image').removeClass('first-image');
+    }
+
+});
     </script>
     <script>
             var didScroll;
@@ -283,6 +289,7 @@
                 lastScrollTop = st;
             }
         </script>
+   
 </body>
 
 </html>
