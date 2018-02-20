@@ -186,6 +186,7 @@ height: 100vh;
   background-position: right;
   background-color:#ffffff; 
   color:#F1F2E2;
+  background-repeat: no-repeat;
 } 
 .col-image{
   height: 100vh;
