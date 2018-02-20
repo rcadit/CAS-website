@@ -97,11 +97,8 @@ body{
   max-height: 100vh;
 }
 
- .thread-button-row{
-  padding-top: 5vh;
-  
-}
-.thread-landing{
+
+.landing{
   padding-top: 15vh;
   
 }
@@ -124,62 +121,32 @@ border-radius:0;
 }
 
 .button-row{
-
+  padding-top: 5vh;
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 30vh;
   opacity: 1;
 }
 .index-button-row{
+  padding-top: 0px !important;
   padding-left: 15%;
   padding-right: 15%;
 }
-.respect-wrapper{
-  
-  height: 100vh;
-  background-color: #F1F2E2;
-  color:#2C2F32;
-  
-}
-.responsibility-wrapper{
-  height: 100vh;
- 
-}
+
 .no-padding{
   padding-right: 0px;
   padding-left: 0px;
   max-height: 100vh;
 }
-.who-we-are-wrapper{
-  height:100vh;
-  background-color: #F1F2E2;
-  color:#2C2F32;
- 
-}
-.purpose-wrapper{
-  
-  height: 100vh;
-  background-color: #F1F2E2;
-  color:#2C2F32;
-}
-.contribution-wrapper{
-
+.lightBackground{
   height:100vh;
   background-color: #F1F2E2;
   color:#2C2F32;
 }
-.about-us-wrapper{
-  margin-top: 15vh;
-  padding-bottom: 15vh;
-  height:70vh;
-  background-color: #F1F2E2;
-}
-
-
-.what-can-you-do-wrapper{
-
-  height:50vh;
- 
+.darkBackground{
+  color: #F1F2E2;
+  background-color: #2C2F32;
+  height:100vh;
 }
 
 .footer{

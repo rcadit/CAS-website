@@ -15,7 +15,7 @@
 
 </head>
 
-<body>
+<body onload="startup()">
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top " role="navigation">
 
         <div class="container">
@@ -40,9 +40,9 @@
 
     </nav>
 
-    <div class="text-center first-panel" style="background-image: url(images/castvlanding.JPG)">
+    <div class="text-center first-panel" style="background-image: url(images/castvlanding.JPG)" id = "first-panel">
         <div class="dark-overlay"></div>
-        <div class="thread-landing">
+        <div class="landing">
             <div class="container animated fadeInDown">
 
                 <div class="row header-row">
@@ -54,7 +54,7 @@
             </div>
 
             <div class="container animated fadeInUp">
-                <div class="row thread-button-row button-row">
+                <div class="row button-row">
 
                     <div class="col">
                         <a href="#who-we-are">
@@ -82,12 +82,12 @@
     </div>
     </div>
 
-    <div class="who-we-are-wrapper">
+    <div class="lightBackground">
         <div class="row">
             <div class="col-xl-6 no-padding">
                 <div class="container text-center " id="who-we-are">
                     <div class="row header-row">
-                        <div class="col">
+                        <div class="col" id = "first-col">
                             <h1> Who we are </h1>
                         </div>
                     </div>
@@ -101,7 +101,7 @@
                 </div>
             </div>
             <div class="col-xl-6 no-padding">
-                <div class="col-image">
+                <div class="col-image first-image a" id = "first-image" style="background-image: url(images/castvTeam.jpg)">
 
                 </div>
             </div>
@@ -154,7 +154,7 @@
         </div>
     </div>
 
-    <div class="contribution-wrapper" id="cas-tv-contribution">
+    <div class="darkBackground" id="cas-tv-contribution">
         <div class="row">
             
             <div class="col-xl-6 no-padding">
@@ -179,7 +179,7 @@
         </div>
 
     </div>
-    <div class="what-can-you-do-wrapper">
+    <div class="lightBackground">
         <div class="row">
                 <div class="col-xl-6 no-padding">
                         <div class="col-image"  style="background-image: url(images/nixon.jpg)">
@@ -209,72 +209,24 @@
 
     </div>
 
-    
+    <div class="footer">
+        <div class="container text-center">
+            <span>(Basically) Designed and Coded by Adit Roychowdhury (+ Declan)</span>
+            <span>Tanglin Trust School</span>
+        </div>
+    </div>
 
 
 
 
 
-
-
+    <script src="javascript/scripts.js"></script> 
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script>
-        $('a[href^="#"]').on('click', function (event) {
-            var target = $(this.getAttribute('href'));
-            if (target.length) {
-                event.preventDefault();
-                $('html, body').stop().animate({
-                    scrollTop: target.offset().top
-                }, 1600);
-            }
-        });
-    </script>
-    <script>
-        var didScroll;
-        var lastScrollTop = 0;
-        var delta = 5;
-        var navbarHeight = $('nav').outerHeight();
+    
 
-        $(window).scroll(function (event) {
-            didScroll = true;
-        });
 
-        setInterval(function () {
-            if (didScroll) {
-                hasScrolled();
-                didScroll = false;
-            }
-        }, 250);
-
-        function hasScrolled() {
-            var st = $(this).scrollTop();
-
-            // Make sure they scroll more than delta
-            if (Math.abs(lastScrollTop - st) <= delta)
-                return;
-
-            // If they scrolled down and are past the navbar, add class .nav-up.
-            // This is necessary so you never see what is "behind" the navbar.
-            if (st > lastScrollTop && st > navbarHeight) {
-                // Scroll Down
-                $('nav').removeClass('nav-down').addClass('nav-up');
-            } else {
-                // Scroll Up
-                if (st + $(window).height() < $(document).height()) {
-                    $('nav').removeClass('nav-up').addClass('nav-down');
-                }
-            }
-
-            lastScrollTop = st;
-        }
-    </script>
-</body>
-</div>
-<div class="footer">
-
-</div>
 
 
 
