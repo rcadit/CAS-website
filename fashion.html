@@ -88,7 +88,7 @@
             <div class = "col-xl-6 no-padding">
         <div class="container text-center " id="who-we-are">
             <div class="row header-row">
-                <div class="col">
+                <div class="col" id = "first-col">
                     <h1> Who we are </h1>
                 </div>
             </div>
@@ -98,9 +98,6 @@
                     <h3> "Threads" is a group of students interested in the impact of the fast fashion industry on our environment.
                         We focus on trying to reduce clothing waste by offering alternatives to throwing away clothes that
                         no longer fit, aren't trendy anymore, or just not to your taste: upcycling!
-
-                        <br> Upcycling, similar to recycling, takes something that's about to be thrown away and transforms it
-                        into something new.
                     </h3>
                 </div>
             </div>
@@ -109,7 +106,7 @@
     </div>
     
     <div class = "col-xl-6 no-padding">
-        <div class ="col-image first-image" id = "first-image" style ="background-image: url(http://www.unairan.org/wp-content/uploads/2017/06/Environment.jpg)"></div>
+        <div class ="col-image first-image a" id = "first-image" style ="background-image: url(https://static.pexels.com/photos/296881/pexels-photo-296881.jpeg)"></div>
     </div>
 
     </div>
@@ -247,9 +244,14 @@
     if(scroll > os + ht){
         $('#first-image').removeClass('first-image');
     }
-
-});
+    else {
+        $("#first-image").addClass("first-image");
+    }
+    });
+    
     </script>
+    
+
     <script>
             var didScroll;
             var lastScrollTop = 0;
