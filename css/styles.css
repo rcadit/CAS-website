@@ -104,7 +104,7 @@ body{
   padding-top: 15vh;
   
 }
-.btn-outline-primary{
+/* .btn-outline-primary{
  border-color: #3FC380;
 color: #3FC380;
 display:inline-block;
@@ -120,7 +120,24 @@ border-radius:0;
   background-color: #3FC380;
   border-color: #3FC380;
 
-}
+} */
+.btn-outline-primary{
+  border-color: #F1F2E2;
+ color: #F1F2E2;
+ display:inline-block;
+ width:200px;
+ padding: 15px;
+ text-transform: uppercase;
+ border-radius:0;
+ 
+ }
+ 
+ .btn-outline-primary:hover{
+   color: #F1F2E2;
+   background-color: #3FC380;
+   border-color: #3FC380;
+ 
+ }
 
 .button-row{
   padding-top: 5vh;
