@@ -182,6 +182,11 @@ color: #fbfbfb;
 height: 100vh;
 
 }
+.threadsWYCD{
+  background-size: contain !important;
+  
+  
+}
  .first-image{
   background-attachment: scroll  !important;
   height: 100vh;
