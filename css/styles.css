@@ -60,7 +60,9 @@ body{
     height: 100%;
   
   }
-  
+  .fashionContribution{
+    background-size: contain !important;
+  }
 .header-row{
   padding-top: 30vh;
   
@@ -168,8 +170,9 @@ border-radius:0;
   display: inline-block;
 }
 .name{
-  padding-top: 10px;
+  padding-top: 3vh;
   text-align: center;
+  font-size: 22px;
 }
 
 .first-panel{
