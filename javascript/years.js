@@ -32,7 +32,7 @@ request.onload = function () {
     var $powerMonths = $powerYear;
     $powerMonths = Math.floor($powerMonths * 12) % 12
     $powerYear = Math.floor($powerYear);
-    var $coalKg = $KWHdayInt /2
+    var $coalKg = Math.floor($KWHdayInt /2)
 
 
     // replace all the divs with the data
