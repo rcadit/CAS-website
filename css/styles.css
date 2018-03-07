@@ -221,6 +221,9 @@ border-radius:0;
   
   
 }
+.mainWrapper{
+  position: relative;
+}
  .first-image{
   background-attachment: scroll  !important;
   height: 100vh;
@@ -230,7 +233,34 @@ border-radius:0;
   color: #F1F2E2;
   background-repeat: no-repeat;
 }
+.firstFact{
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
 
+}
+.secondFact{
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+}
+.thirdFact{
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+}
+.fourthFact{
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+}
 .col-image {
   height: 100vh;
   background-size: cover;
