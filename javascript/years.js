@@ -32,8 +32,9 @@ request.onload = function () {
     var $powerMonths = $powerYear;
     $powerMonths = Math.floor($powerMonths * 12) % 12
     $powerYear = Math.floor($powerYear);
-    var $coalKg = Math.floor($KWHdayInt /2)
-
+    var $coalKg = Math.floor($KWHdayInt / 2);
+    var $dollars = $KWHdayInt * 0.2156;
+    $dollars = $dollars.toFixed(2);
 
     // replace all the divs with the data
     document.getElementById("kwh").innerHTML = $KWHdayInt + " kwh";
@@ -43,13 +44,15 @@ request.onload = function () {
     else {
         document.getElementById("num-years").innerHTML = $powerYear + " years";
     }
-    if($powerMonths = 1){
+    if ($powerMonths = 1) {
         document.getElementById("num-months").innerHTML = $powerMonths + " month";
 
     }
-    else{
+    else {
         document.getElementById("num-months").innerHTML = $powerMonths + " months";
     }
-    document.getElementById("coalKg").innerHTML = $coalKg + " kg"
+    // document.getElementById("coalKg").innerHTML = $coalKg + " kg";
+    console.log($dollars);
+    document.getElementById("dollars").innerHTML = "$ " + $dollars;
     // console.log($powerYear);
 }
