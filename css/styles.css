@@ -33,12 +33,12 @@ html {
 }
 
 nav {
-  background-color: #3FC380;
+  background-color: rgb(66, 180, 75);
   font-size: 14px;
   text-transform: uppercase;
   color: #F1F2E2;
   transition: top 0.2s ease-in-out;
-  height: 80px;
+  min-height: 80px;
 }
 
 .nav-up {
@@ -287,3 +287,6 @@ border-radius:0;
   -o-background-size: cover;
   background-size: cover;
 }
+.custom-toggler.navbar-toggler {
+  border-color: rgb(255,102,203);
+} 
