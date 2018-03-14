@@ -18,7 +18,6 @@ background-color: #2C2F32;
 
 */
 
-
 .text-center {
   display: block;
 }
@@ -36,7 +35,7 @@ nav {
   background-color: rgb(66, 180, 75);
   font-size: 14px;
   text-transform: uppercase;
-  color: #F1F2E2;
+  color: rgb(255, 255, 255);
   transition: top 0.2s ease-in-out;
   min-height: 80px;
 }
@@ -109,6 +108,7 @@ body {
 .landing {
   padding-top: 15vh;
 }
+
 /* .btn-outline-primary{
  border-color: #3FC380;
 color: #3FC380;
@@ -134,23 +134,22 @@ border-radius:0;
   border-color: #3FC380;
 
 } */
-.btn-outline-primary{
+
+.btn-outline-primary {
   border-color: #F1F2E2;
- color: #F1F2E2;
- display:inline-block;
- width:200px;
- padding: 15px;
- text-transform: uppercase;
- border-radius:0;
- 
- }
- 
- .btn-outline-primary:hover{
-   color: #F1F2E2;
-   background-color: #3FC380;
-   border-color: #3FC380;
- 
- }
+  color: #F1F2E2;
+  display: inline-block;
+  width: 200px;
+  padding: 15px;
+  text-transform: uppercase;
+  border-radius: 0;
+}
+
+.btn-outline-primary:hover {
+  color: #F1F2E2;
+  background-color: rgb(66, 180, 75);
+  border-color: rgb(66, 180, 75);
+}
 
 .button-row {
   padding-top: 5vh;
@@ -216,16 +215,17 @@ border-radius:0;
   color: #fbfbfb;
   height: 100vh;
 }
-.threadsWYCD{
+
+.threadsWYCD {
   background-size: contain !important;
-  
-  
 }
-.mainWrapper{
+
+.mainWrapper {
   position: relative;
 }
- .first-image{
-  background-attachment: scroll  !important;
+
+.first-image {
+  background-attachment: scroll !important;
   height: 100vh;
   background-size: auto auto;
   background-position: right;
@@ -233,34 +233,38 @@ border-radius:0;
   color: #F1F2E2;
   background-repeat: no-repeat;
 }
-.firstFact{
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
 
+.firstFact {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-.secondFact{
+
+.secondFact {
   height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
   visibility: hidden;
 }
-.thirdFact{
+
+.thirdFact {
   height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
   visibility: hidden;
 }
-.fourthFact{
+
+.fourthFact {
   height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
   visibility: hidden;
 }
+
 .col-image {
   height: 100vh;
   background-size: cover;
@@ -287,6 +291,8 @@ border-radius:0;
   -o-background-size: cover;
   background-size: cover;
 }
+
 .custom-toggler.navbar-toggler {
-  border-color: rgb(255,102,203);
-} 
+  border-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
