@@ -236,13 +236,13 @@ border-radius:0;
 
 .firstFact {
   height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
+ 
+
 }
 
 .secondFact {
   height: 100vh;
+  width: 100vw;
   position: absolute;
   top: 0;
   left: 0;
@@ -251,6 +251,7 @@ border-radius:0;
 
 .thirdFact {
   height: 100vh;
+  width: 100vw;
   position: absolute;
   top: 0;
   left: 0;
@@ -259,6 +260,7 @@ border-radius:0;
 
 .fourthFact {
   height: 100vh;
+  width: 100vw;
   position: absolute;
   top: 0;
   left: 0;
