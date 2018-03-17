@@ -78,6 +78,7 @@ body {
   padding-top: 30vh;
 }
 
+
 .header-row h1 {
   width: 100%;
   font-size: 48px;
@@ -92,7 +93,9 @@ body {
 .indexNav{
   visibility: hidden;
 }
-
+.fact{
+  text-transform: uppercase;
+}
 .team-row {
   padding-top: 15vh;
   padding-top: 5vh;
