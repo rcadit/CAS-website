@@ -18,7 +18,8 @@
 </head>
 
 <body onload="startup()">
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top " role="navigation">
+        <div class = "blackScreen" id ="blackScreen"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top indexNav" role="navigation" id ="nav">
         <a class="navbar-brand" href="index.html">
             <img src="images/logo.png" height="50vh">
         </a>
@@ -41,134 +42,9 @@
         </div>
     </nav>
 
-    <!-- <div class="text-center first-panel" style="background-image: url(https://scontent.fsin2-1.fna.fbcdn.net/v/t31.0-8/23467479_1616676071724790_8231694728842514499_o.jpg?oh=344731d48fa28bedf5f5f1a935a768d7&oe=5AD4FF1D)"
-        id="first-panel">
-        <div class="dark-overlay"></div>
-        <div class = "mainWrapper">
-        <div class="firstFact">
-            <div class="row ">
-                <div class="container text-center " id="1">
-                    <div class="row header-row">
-                        
-                            <h1> Yesterday </h1>
-                      
-                    </div>
+   
 
-                    <div class="row text-center">
-                       
-                            <h3>
-                                <div id="kwh"></div>
-
-                                of energy was used around the school
-                            </h3>
-                     
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <div class="secondFact">
-        <div class="row">
-            <div class="container text-center" id="2">
-
-                <div class="row header-row ">
-                    <div class="col">
-                        <h1> That's enough energy </h1>
-                    </div>
-                </div>
-
-
-
-                <div class="row">
-                    <div class="col">
-                        <h3>
-                            to power an average house in the UK for
-                           
-                                <div id="num-years"></div>
-                           
-                            and 
-                            <b>
-                                <div id="num-months"></div>
-                            </b>
-                    </div>
-
-                    </h3>
-                </div>
-            </div>
-        </div>
-    </div>
-        <div class="thirdFact">
-                <div class="row">
-                       
-                            <div class="container text-center">
-                                <div class="row header-row">
-                                    <div class="col">
-                                        <h1> Which is equivalent to </h1>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <h3>
-                                            <b>
-                                                <div id="coalKg"></div>
-                                            </b>
-                                            of coal </h3>
-                                    </div>
-                                </div>
-        
-                            </div>
-                     
-                       
-                    </div>
-        </div>
-        <div class = "fourthFact">
-        <div class="container animated fadeInDown">
-            <div class="row header-row">
-                <div class="col">
-                    <h1 id="first-panel-header">SUSTAINABILITY AT TANGLIN TRUST SCHOOL </h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <h3 id="first-panel-text">At Tanglin Trust School, we strive to create a sustainible future through our everyday actions.
-                        <br>
-                        <br> Find out how you can make a difference.
-
-                    </h3>
-
-
-
-
-                </div>
-            </div>
-        </div>
-
-        <div class="container animated fadeInUp">
-            <div class="row button-row index-button-row">
-
-                <div class="col">
-                    <a href="#first-col">
-                        <button class="btn btn-outline-primary">RESPECT</button>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="#responsibility">
-                        <button class="btn btn-outline-primary">RESPONSIBILITY </button>
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="#purpose">
-                        <button class="btn btn-outline-primary"> PURPOSE </button>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-    </div> -->
-
-    <div class="text-center first-panel" style="background-image: url(https://scontent.fsin2-1.fna.fbcdn.net/v/t31.0-8/23467479_1616676071724790_8231694728842514499_o.jpg?oh=344731d48fa28bedf5f5f1a935a768d7&oe=5AD4FF1D)" id="first-panel">
+    <div class="text-center first-panel shadow" style="background-image: url(https://scontent.fsin2-1.fna.fbcdn.net/v/t31.0-8/23467479_1616676071724790_8231694728842514499_o.jpg?oh=344731d48fa28bedf5f5f1a935a768d7&oe=5AD4FF1D)" id="first-panel">
         <div class="dark-overlay"></div>
         <div class="firstFact text-center animated fadeIn">
             <div class="row ">
@@ -181,11 +57,11 @@
 
                     <div class="row text-center">
                        
-                            <h3>
-                                <div id="kwh"></div>
+                            <h2>
+                                <div id="kwh" ></div>
 
                                 of energy was used around the school
-                            </h3>
+                            </h2>
                      
                     </div>
 
@@ -206,18 +82,18 @@
     
                     <div class="row">
                         <div class="col">
-                            <h3>
+                            <h2>
                                 to power an average house in the UK for
                                
                                     <div id="num-years"></div>
                                
                                 and 
-                                <b>
+                              
                                     <div id="num-months"></div>
-                                </b>
+                               
                         </div>
     
-                        </h3>
+                        </h2>
                     </div>
                 </div>
             </div>
@@ -228,16 +104,16 @@
                                 <div class="container text-center">
                                     <div class="row header-row">
                                         <div class="col">
-                                            <h1> Which is equivalent to </h1>
+                                            <h1> And Equivalent to over</h1>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col">
-                                            <h3>
+                                            <h2>
                                                 <b>
-                                                    <div id="coalKg"></div>
+                                                    <div id="dollars"></div>
                                                 </b>
-                                                of coal </h3>
+                                                </h2>
                                         </div>
                                     </div>
             
@@ -246,6 +122,7 @@
                            
                         </div>
             </div>
+
         <div class = "fourthFact animated " id ="4">
         <div class="container animated fadeInDown">
             <div class="row header-row">
@@ -303,7 +180,7 @@
                     </div>
                     <div class="row">
 
-                        <h2> From a young age, our students are encouraged to respect the environment - this attidude is what
+                        <h2> From a young age, our students are encouraged to respect the environment - this attitude is what
                             motivates us to restore the environment we live in. </h2>
 
                     </div>
@@ -335,7 +212,7 @@
                     <div class="row">
                         <div class="col">
                             <h2> Here at Tanglin, we help our students develop a sense of responsibility for the environment.
-                                Recently we introduced many new recycling bins around the school so the waste that we produce
+                                Recently, we introduced many new recycling bins around the school so the waste that we produce
                                 is recycled responsibly. </h2>
                         </div>
                     </div>
