@@ -64,10 +64,10 @@ function startup() {
     
     setTimeout(showSecond,3500 ); // show second after 3.5 seconds 
     //display for 2 seconds
-    setTimeout(hideSecond,5500 ); // hide second after 6.5 seconds Fade out takes 1 second
-    setTimeout(showThird, 7500);
+    setTimeout(hideSecond,6000 ); // hide second after 6 seconds Fade out takes 1 second
+    setTimeout(showThird, 7000);
     setTimeout(hideThird, 9500);
-    setTimeout(showFinal, 11500);
+    setTimeout(showFinal, 10500);
   
     
 }
@@ -90,19 +90,19 @@ function extra() {
 }
 
 function hidefirst(){
-    $("#1").removeClass("fadeIn").addClass("hidden");
+    $("#1").removeClass("fadeIn").addClass("fadeOut hidden");
 }
 function showSecond(){
     $("#2").addClass("fadeIn visible");
 }
 function hideSecond(){
-    $("#2").addClass("hidden");
+    $("#2").addClass("fadeOut hidden");
 }
 function showThird(){
     $("#3").addClass("fadeIn visible");
 }
 function hideThird(){
-    $("#3").addClass("hidden");
+    $("#3").addClass("fadeOut hidden");
 }
 function showFinal(){
     $("#4").addClass("fadeIn visible");
