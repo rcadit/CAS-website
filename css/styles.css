@@ -236,13 +236,26 @@ border-radius:0;
 
 .firstFact {
   height: 100vh;
- 
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+.hidden{
+  visibility: hidden !important;
+  opacity: 0;
+  transition: visibility 0s 1s, opacity 1s linear;
+}
+.visible{
+  visibility: visible;
 
 }
 
+
 .secondFact {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -251,7 +264,7 @@ border-radius:0;
 
 .thirdFact {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -259,12 +272,7 @@ border-radius:0;
 }
 
 .fourthFact {
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-  top: 0;
-  left: 0;
-  visibility: hidden;
+   visibility: hidden;
 }
 
 .col-image {
