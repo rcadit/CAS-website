@@ -101,9 +101,10 @@ body {
 }
 .header-row h1 {
   width: 100%;
-  font-size: 48px;
+
   text-transform: uppercase;
   padding-bottom: 5vh;
+  font-weight:800;
 }
 
 .row {
