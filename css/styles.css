@@ -78,7 +78,27 @@ body {
   padding-top: 30vh;
 }
 
+.fact-row{
+  padding-top: 30vh;
 
+}
+.fact-row h1 {
+  width: 100%;
+   text-transform:uppercase;
+   font-weight:200;
+   
+  
+}
+
+.fact{
+  text-transform: uppercase;
+  font-weight:200;
+  
+}
+.mainFact{
+  font-weight:800 !important;
+  font-size: 72px;
+}
 .header-row h1 {
   width: 100%;
   font-size: 48px;
@@ -93,9 +113,7 @@ body {
 .indexNav{
   visibility: hidden;
 }
-.fact{
-  text-transform: uppercase;
-}
+
 .team-row {
   padding-top: 15vh;
   padding-top: 5vh;
@@ -277,6 +295,7 @@ border-radius:0;
 
 .thirdFact {
   height: 100vh;
+  padding-top: 10vh;
   width: 100%;
   position: absolute;
   top: 0;

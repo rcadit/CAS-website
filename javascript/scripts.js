@@ -64,12 +64,12 @@ function startup() {
     
     setTimeout(showSecond,3000 ); // show second after 3.5 seconds 
     //display for 2 seconds
-    setTimeout(hideSecond,5000 ); // hide second after 6 seconds Fade out takes 1 second
-    setTimeout(showThird, 6000);
-    setTimeout(hideThird, 8000);
-    setTimeout(removeBlackScreen, 8000);
-    setTimeout(showFinal, 9000);
-    setTimeout(addNavbar, 9000);
+    setTimeout(hideSecond,7500 ); // hide second after 6 seconds Fade out takes 1 second
+    setTimeout(showThird, 8500);
+    setTimeout(hideThird, 10500);
+    setTimeout(removeBlackScreen, 10500);
+    setTimeout(showFinal, 11500);
+    setTimeout(addNavbar, 11500);
   
     
 }
