@@ -62,7 +62,14 @@ body {
   width: 100%;
   height: 100%;
 }
-
+.blackScreen {
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 .fashionContribution {
   background-size: contain !important;
 }
@@ -71,16 +78,41 @@ body {
   padding-top: 30vh;
 }
 
+.fact-row{
+  padding-top: 30vh;
+
+}
+.fact-row h1 {
+  width: 100%;
+   text-transform:uppercase;
+   font-weight:200;
+   
+  
+}
+
+.fact{
+  text-transform: uppercase;
+  font-weight:200;
+  
+}
+.mainFact{
+  font-weight:800 !important;
+  font-size: 72px;
+}
 .header-row h1 {
   width: 100%;
-  font-size: 48px;
+
   text-transform: uppercase;
   padding-bottom: 5vh;
+  font-weight:800;
 }
 
 .row {
   box-sizing: border-box;
   margin: 0;
+}
+.indexNav{
+  visibility: hidden;
 }
 
 .team-row {
@@ -236,13 +268,26 @@ border-radius:0;
 
 .firstFact {
   height: 100vh;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
+
 }
+.hidden{
+  visibility: hidden !important;
+  opacity: 0;
+  transition: visibility 0s 1s, opacity 1s linear;
+}
+.visible{
+  visibility: visible;
+
+}
+
 
 .secondFact {
   height: 100vh;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -251,6 +296,8 @@ border-radius:0;
 
 .thirdFact {
   height: 100vh;
+  padding-top: 10vh;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -258,11 +305,7 @@ border-radius:0;
 }
 
 .fourthFact {
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  visibility: hidden;
+   visibility: hidden;
 }
 
 .col-image {
