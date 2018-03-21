@@ -310,21 +310,24 @@ border-radius:0;
 
 .col-image {
   height: 100vh;
-  background-size: cover;
+  background-size: contain;
   background-attachment: fixed;
-  background-position: right;
+  background-repeat: no-repeat;
+ 
   background-color: #ffffff;
   color: #F1F2E2;
   height: 100vh;
 
 }
-
+/* a is needed for first-image */
 .a {
   background-size: auto 100% !important;
 }
-.fit{
-  background-size: 100% auto;
- 
+.left{
+  background-position: left;
+}
+.right{
+  background-position: right;
 }
 .image-row {
   padding-left: 10vw;
