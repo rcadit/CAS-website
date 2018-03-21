@@ -17,7 +17,9 @@ background-color: #2C2F32;
 3FC380
 
 */
-
+.noScroll{
+  overflow: hidden;
+}
 .text-center {
   display: block;
 }
