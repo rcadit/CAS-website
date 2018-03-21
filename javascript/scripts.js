@@ -1,4 +1,8 @@
 function startup() {
+    $(document).ready(function($) {
+        // hide preloader when everthing in the document load
+        $('#preloader').addClass("fadeOut hidden");
+ });
     //Smooth scrolling
     $('a[href^="#"]').on('click', function (event) {
         var target = $(this.getAttribute('href'));
