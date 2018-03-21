@@ -17,9 +17,7 @@ background-color: #2C2F32;
 3FC380
 
 */
-.noScroll{
-  overflow: hidden;
-}
+
 .text-center {
   display: block;
 }
@@ -317,12 +315,17 @@ border-radius:0;
   background-position: right;
   background-color: #ffffff;
   color: #F1F2E2;
+  height: 100vh;
+
 }
 
 .a {
   background-size: auto 100% !important;
 }
-
+.fit{
+  background-size: 100% auto;
+ 
+}
 .image-row {
   padding-left: 10vw;
   padding-right: 10vw;
