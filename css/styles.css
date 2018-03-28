@@ -62,12 +62,19 @@ html {
 }
 
 nav {
-  background-color: rgb(66, 180, 75);
+  /* background-color: rgb(66, 180, 75); #00AF66*/
+  background-color: #5ECB5A;
   font-size: 14px;
   text-transform: uppercase;
-  color: rgb(255, 255, 255);
+  color: #FFFFFF !important;
   transition: top 0.2s ease-in-out;
   min-height: 80px;
+}
+.navbar-nav a {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+.navbar-nav a:hover{
+  color: rgba(255, 255, 255, 0.95) !important;
 }
 
 .nav-up {
