@@ -17,12 +17,8 @@ background-color: #2C2F32;
 3FC380
 
 */
-/* .skip{
-  position: relative;
-  height: 100vh;
-  width: 100vw;
-  z-index: 9999;
-}
+
+/*
 .skip h1{
   position:absolute;
   bottom:0;
@@ -46,8 +42,12 @@ background-color: #2C2F32;
 background-image: url("images/logo.png")
 }
 
-
-
+.navbar-skip{
+  background-color: rgba(0, 0, 0, 0)
+}
+.navbar-skip a{
+  color: #ffffff
+}
 .text-center {
   display: block;
 }
@@ -62,8 +62,8 @@ html {
 }
 
 nav {
-  /* background-color: rgb(66, 180, 75); #00AF66*/
-  background-color: #5ECB5A;
+  background-color: rgb(66, 180, 75);
+  ;
   font-size: 14px;
   text-transform: uppercase;
   color: #FFFFFF !important;
@@ -76,7 +76,10 @@ nav {
 .navbar-nav a:hover{
   color: rgba(255, 255, 255, 0.95) !important;
 }
-
+.bottom{
+  position: absolute;
+  margin-bottom: 0;
+}
 .nav-up {
   top: -80px;
 }
