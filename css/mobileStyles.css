@@ -1,0 +1,420 @@
+/* Colour Palette
+#F1F2E2 - Light Shades (text/background)
+#85A38B - Light accent
+#3FC380 - Main colour
+#7F6E5A - Dark accent
+#2C2F32 - dark shade (text/background) 
+
+DARK TEXT/LIGHT BACKGROUND
+background-color: #F1F2E2;
+  color:#2C2F32;
+
+  LIGHT TEXT/DARK BACKGROUND
+background-color: #2C2F32;
+  color:#F1F2E2;
+
+
+3FC380
+
+*/
+
+/*
+.skip h1{
+  position:absolute;
+  bottom:0;
+  right:0;
+} */
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9998;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loader {
+  background-image: url("images/logo.png")
+  }
+  
+  .navbar-skip{
+    background-color: rgba(0, 0, 0, 0)
+  }
+  .navbar-skip a{
+    color: #ffffff
+  }
+  .text-center {
+    display: block;
+  }
+  
+  .rotated {
+    transform: rotate(90deg);
+  }
+  
+  html {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+  
+  nav {
+    background-color: rgb(66, 180, 75);
+    ;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #FFFFFF !important;
+    transition: top 0.2s ease-in-out;
+    min-height: 80px;
+  }
+  .navbar-nav a {
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
+  .navbar-nav a:hover{
+    color: rgba(255, 255, 255, 0.95) !important;
+  }
+  .bottom{
+    position: absolute;
+    margin-bottom: 0;
+  }
+  .nav-up {
+    top: -80px;
+  }
+  
+  .no-margin {
+    margin: 0px !important;
+  }
+  
+  body {
+    font-family: 'Open Sans';
+    color: #F1F2E2;
+    background-color: #2C2F32;
+  }
+  
+  .dark-overlay {
+    background-color: rgba(21, 21, 22, 0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .blackScreen {
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .fashionContribution {
+    background-size: contain !important;
+  }
+  
+  .title-row {
+    padding-top: 15vh;
+  }
+  .header-row{
+      padding-top: 10vh;
+  }
+  .fact-row{
+    padding-top: 30vh;
+  
+  }
+  .fact-row h1 {
+    width: 100%;
+     text-transform:uppercase;
+     font-weight:200;
+     
+    
+  }
+  .wrapper{
+  border: solid transparent 0.1px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+  .respect{
+    background-image: url(http://www.unairan.org/wp-content/uploads/2017/06/Environment.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+  }
+  .fact{
+    text-transform: uppercase;
+    font-weight:200;
+    
+  }
+  .mainFact{
+    font-weight:800 !important;
+    font-size: 72px;
+  }
+  .header-row h1 {
+    width: 100%;
+  
+    text-transform: uppercase;
+    padding-bottom: 2vh;
+    font-weight:800;
+  }
+  
+  .row {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  .indexNav{
+    visibility: hidden;
+  }
+  
+  .team-row {
+    padding-top: 15vh;
+    padding-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 48px;
+    text-transform: uppercase;
+    padding-bottom: 5vh;
+  }
+  
+  #first-panel-text {
+    padding-bottom: 5%;
+    font-size: 24.5px;
+  }
+  
+  .team-column {
+    height: 100vh;
+    max-height: 100vh;
+  }
+  
+  .landing {
+    padding-top: 15vh;
+  }
+  
+  /* .btn-outline-primary{
+   border-color: #3FC380;
+  color: #3FC380;
+  display:inline-block;
+  width:200px;
+  padding: 15px;
+  text-transform: uppercase;
+  border-radius:0;
+  
+  .btn-outline-primary {
+    border-color: #3FC380;
+    color: #3FC380;
+    display: inline-block;
+    width: 200px;
+    padding: 15px;
+    text-transform: uppercase;
+    border-radius: 0;
+  }
+  
+  .btn-outline-primary:hover {
+    color: #F1F2E2;
+    background-color: #3FC380;
+    border-color: #3FC380;
+  
+  } */
+  
+  .btn-outline-primary {
+    border-color: #F1F2E2;
+    color: #F1F2E2;
+    display: inline-block;
+    width: 200px;
+    padding: 15px;
+    text-transform: uppercase;
+    border-radius: 0;
+  }
+  
+  .btn-outline-primary:hover {
+    color: #F1F2E2;
+    background-color: rgb(66, 180, 75);
+    border-color: rgb(66, 180, 75);
+  }
+  
+  .button-row {
+    padding-top: 5vh;
+    padding-left: 5%;
+    padding-right: 5%;
+  
+    opacity: 1;
+  }
+  
+  .index-button-row {
+    padding-top: 0px !important;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .no-padding {
+    padding-right: 0px;
+    padding-left: 0px;
+    max-height: 100vh;
+  }
+  
+  .lightBackground {
+  
+  max-height: 90vh;
+
+   width: 100%;
+    background-color: #F1F2E2;
+    color: #2C2F32;
+    margin-left: 25%;
+/* 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%); */
+
+  }
+  .lightBackground h2{
+      font-size: 1.5rem;
+  }
+  
+  .darkBackground {
+    color: #F1F2E2;
+    background-color: #2C2F32;
+    height: 100vh;
+  }
+  
+  .footer {
+    height: 5vh;
+    background-color: #2C2F32;
+    padding-top: 5px;
+  }
+  
+  .footer span {
+    font-size: 11px;
+    color: #F1F2E2;
+    display: inline-block;
+    text-transform: uppercase;
+  }
+  
+  .profile-image {
+    border-radius: 50%;
+    max-height: 15vh;
+    align-content: center;
+    display: inline-block;
+  }
+  
+  .name {
+    padding-top: 3vh;
+    text-align: center;
+    font-size: 22px;
+  }
+  
+  .first-panel {
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fbfbfb;
+    height: 100vh;
+  }
+  
+  .threadsWYCD {
+    background-size: contain !important;
+  }
+  
+  .mainWrapper {
+    position: relative;
+  }
+  
+  .first-image {
+    background-attachment: scroll !important;
+    height: 100vh;
+    background-size: auto auto;
+    background-position: right;
+    background-color: #ffffff;
+    color: #F1F2E2;
+    background-repeat: no-repeat;
+  }
+  
+  .firstFact {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  
+  }
+  .hidden{
+    visibility: hidden !important;
+    opacity: 0;
+    transition: visibility 0s 1s, opacity 1s linear;
+  }
+  .visible{
+    visibility: visible;
+  
+  }
+  
+  
+  .secondFact {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+  }
+  
+  .thirdFact {
+    height: 100vh;
+    padding-top: 10vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+  }
+  
+  .fourthFact {
+     visibility: hidden;
+  }
+  
+  .col-image {
+    height: 100vh;
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+   
+    background-color: #ffffff;
+    color: #F1F2E2;
+display:none;
+  
+  }
+ 
+  /* a is needed for first-image */
+  .a {
+    background-size: auto 100% !important;
+  }
+  .left{
+    background-position: left;
+  }
+  .right{
+    background-position: right;
+  }
+  .image-row {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+  
+  .carousel-item {
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+  .custom-toggler.navbar-toggler {
+    border-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+  }
+  .antarctica-background{
+    background-image: url("https://www.carbonbrief.org/wp-content/uploads/2015/11/Corbis-RM-Antarctica-Weddell-Sea-1550x804.jpg");
+    box-shadow: inset 100vw 100vh rgba(0,0,0,0.25);
+  }

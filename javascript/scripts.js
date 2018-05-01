@@ -97,7 +97,7 @@ function extra() {
 
 function hidefirst(){
     $("#1").removeClass("fadeIn").addClass("fadeOut hidden");
-    window.onscroll = function () { window.scrollTo(0, 0); };
+    
 }
 function showSecond(){
     $("#2").addClass("fadeIn visible");
