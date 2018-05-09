@@ -13,18 +13,18 @@ function startup() {
             }, 1600);
         }
     });
-    //add and remove parralax on scroll
-    $(window).scroll(function () {
-        var scroll = $(window).scrollTop();
-        var os = $('#first-panel').offset().top;
-        var ht = $('#first-panel').height();
-        if (scroll > os + ht) {
-            $('#first-image').removeClass('first-image');
-        }
-        else {
-            $("#first-image").addClass("first-image");
-        }
-    });
+    // //add and remove parralax on scroll
+    // $(window).scroll(function () {
+    //     var scroll = $(window).scrollTop();
+    //     var os = $('#first-panel').offset().top;
+    //     var ht = $('#first-panel').height();
+    //     if (scroll > os + ht) {
+    //         $('#first-image').removeClass('first-image');
+    //     }
+    //     else {
+    //         $("#first-image").addClass("first-image");
+    //     }
+    // });
 
     //sliding up navbar
     var didScroll;
