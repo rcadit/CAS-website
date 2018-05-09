@@ -3,7 +3,7 @@ div {
 }
 
 body {
-    padding-top: 75px;
+    font-family: 'Open Sans';
     color: white;
 }
 
@@ -55,10 +55,15 @@ nav {
 .title {
     padding-top: 24vh;
     font-size: 48px;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-weight: 600;
 }
 
 .subtitle {
     font-size: 32px;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 .center-button {
@@ -70,7 +75,7 @@ nav {
 }
 
 .landing-btn {
-    width: 150px;
+    width: 175px;
     border: 1px solid white;
     color: white;
 }
@@ -85,21 +90,26 @@ nav {
     font-size: 32px;
     padding-top: 5vh;
     text-align: center;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 .panel {
     /* box-shadow: inset 100vw 100vh rgb(42, 179, 87); */
     height: 100vh;
 }
+.btn{
+    border-radius: 0.2rem;
+}
 .btn-outline-primary {
-    border-color: #F1F2E2;
-    color: #F1F2E2;
+    border-color: #FFFFFF;
+    color: #FFFFFF;
     display: inline-block;
  
   }
   
   .btn-outline-primary:hover {
-    color: #F1F2E2;
+    color: #FFFFFF;
     background-color: rgb(66, 180, 75);
     border-color: rgb(66, 180, 75);
   }
@@ -108,11 +118,14 @@ nav {
 
 @media(max-width: 576px) {
     body {
-        padding-top: 75px;
+        font-family: 'Open Sans';
     }
     .title {
-        padding-top: 5vh;
+        padding-top: 15vh;
         font-size: 36px;
+        padding-left: 2%;
+        padding-right: 2%;
+       
     }
     .subtitle {
         font-size: 24px;
@@ -132,10 +145,10 @@ nav {
         font-size: 24px;
     }
     .panel {
-        height: 75vh;
+        height: 100vh;
     }
     .button-col {
-        padding: 7px !important;
+        padding: 2px !important;
     }
     div {
         /* border: magenta solid 1px !important; */

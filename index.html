@@ -7,14 +7,18 @@
     <title>Climate Force</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- Custom styles for this template -->
+    <link href="css/full-slider.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link href='https://fonts.googleapis.com/css?family=Open Sans:200,400,600,800' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
-    <script src="javascript/scripts.js"></script>
 </head>
 
-<body>
+<body onload="startup()">
 
     <nav class="navbar nav navbar-expand-lg fixed-top navbar-dark" role="navigation" id ="nav">
         <a class="navbar-brand" href="index.html">
@@ -26,14 +30,17 @@
 
         <div class="collapse navbar-collapse" id="nav_content">
             <ul class="navbar-nav mr-auto">
-                <li class="nav=-item">
+                <li class="nav-item">
                     <a class="nav-link" href="#"> ACE </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#"> 2041 </a>
                 </li>
-                <li class="nav=-item">
+                <li class="nav-item">
                     <a class="nav-link" href="#"> Threads</a>
+                </li>
+                <li class="nav-item">
+                    <a class = "nav-link" href ="#"> Climate Force</a>
                 </li>
             </ul>
         </div>
@@ -82,7 +89,8 @@
                     Respect
                 </div>
                 <div class="panel-subtitle">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rhoncus rutrum ipsum sed hendrerit. Vivamus non hendrerit orci. Morbi vehicula.
+                    From a young age, our students are encouraged to respect the environment - this attitude is what
+                    motivates us to restore the environment we live in.
                 </div>
             </div>
         </div>
@@ -94,7 +102,9 @@
                     Responsibility
                 </div>
                 <div class="panel-subtitle">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rhoncus rutrum ipsum sed hendrerit. Vivamus non hendrerit orci. Morbi vehicula.
+                    Here at Tanglin, we help our students develop a sense of responsibility for the environment.
+                    Recently, we introduced many new recycling bins around the school so the waste that we produce
+                    is recycled responsibly.
                 </div>
             </div>
         </div>
@@ -106,15 +116,20 @@
                     Purpose
                 </div>
                 <div class="panel-subtitle">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam rhoncus rutrum ipsum sed hendrerit. Vivamus non hendrerit orci. Morbi vehicula.
+                    At Tanglin we believe that, with the right efforts, we can do our part and achieve our goal of saving
+                    the environment. We have recently introduced En-Trak, a platform that helps us understand and monitor our energy usage and its affects on the environment
                 </div>
             </div>
         </div>
     </div>
-
+    <script src="javascript/years.js"></script>
+    <script src="javascript/scripts.js"></script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    
+  
+    
 </body>
 
 </html>
