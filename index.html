@@ -19,19 +19,20 @@
 </head>
 
 <body onload="startup()">
-        <div id="preloader" class = "animated">
-                <div class="loader" >
-                      
-                       <img src = "images/oval.svg">
-                </div>
-            </div>
-        <div class = "blackScreen" id ="blackScreen"></div>
+    <div id="preloader" class="animated">
+        <div class="loader">
 
-    <nav class="navbar nav navbar-expand-lg fixed-top navbar-dark" role="navigation" id ="nav">
+            <img src="images/oval.svg">
+        </div>
+    </div>
+    <div class="blackScreen" id="blackScreen"></div>
+
+    <nav class="navbar nav navbar-expand-lg fixed-top navbar-dark indexNav" role="navigation" id="nav">
         <a class="navbar-brand" href="index.html">
             <img src="images/logo.png" alt="Tanglin Trust School" height="50vh">
         </a>
-        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#nav_content" aria-controls="#nav_content" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#nav_content" aria-controls="#nav_content"
+            aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -47,13 +48,92 @@
                     <a class="nav-link" href="#"> Threads</a>
                 </li>
                 <li class="nav-item">
-                    <a class = "nav-link" href ="#"> Climate Force</a>
+                    <a class="nav-link" href="#"> Climate Force</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <div class="parallax landing-parallax" style ="background-image: url(images/landing.png)">
+
+    <div class="facts parallax landing-parallax animated" style="background-image: url(images/landing.png)">
+        <div class="firstFact text-center animated fadeIn  center-div">
+            <div class="row ">
+                <div class="container text-center " id="1">
+                    <div class="row fact-row">
+
+                        <h1> Yesterday, over </h1>
+
+                    </div>
+
+                    <div class="row text-center">
+
+                        <h1 class="fact">
+                            <div id="kwh" class="mainFact"></div>
+
+                            of energy was used around the school
+                        </h1>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="secondFact text-center animated" id="2">
+            <div class="row">
+                <div class="container text-center">
+
+                    <div class="row fact-row ">
+                        <div class="col">
+                            <h1> That's enough energy </h1>
+                        </div>
+                    </div>
+
+
+
+                    <div class="row">
+                        <div class="col">
+                            <h1 class="fact">
+                                to power an average house in the UK for
+
+                                <div id="num-years" class="mainFact"></div>
+
+                                and
+
+                                <div id="num-months" class="mainFact"></div>
+
+                        </div>
+
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thirdFact text-center animated " id="3">
+            <div class="row">
+
+                <div class="container text-center">
+                    <div class="row fact-row third-fact-row">
+                        <div class="col">
+                            <h1 class="fact"> And Equivalent to over</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h1 class="fact">
+                                <b>
+                                    <div id="dollars" class="mainFact"></div>
+                                </b>
+                            </h1>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    
+    <div class="parallax landing-parallax fourthFact animated" style="background-image: url(images/landing.png)" id="4">
         <div class="title text-center">
             Sustainibility at Tanglin Trust School
         </div>
@@ -88,43 +168,43 @@
             </div>
         </div>
     </div>
-
-    <div class="container-fluid parallax" id="Respect" style = "background-image: url(images/Environment.jpg)">
+</div>
+    <div class="container-fluid parallax" id="Respect" style="background-image: url(images/Environment.jpg)">
         <div class="row">
             <div class="col-12 col-md-6 panel">
                 <div class="panel-title  ">
                     Respect
                 </div>
                 <div class="panel-subtitle">
-                    From a young age, our students are encouraged to respect the environment - this attitude is what
-                    motivates us to restore the environment we live in.
+                    From a young age, our students are encouraged to respect the environment - this attitude is what motivates us to restore
+                    the environment we live in.
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid parallax " id="Responsibility" style = "background-image: url(images/Care.jpg)">
+    <div class="container-fluid parallax " id="Responsibility" style="background-image: url(images/Care.jpg)">
         <div class="row justify-content-end">
             <div class="col-12 col-md-6 panel">
                 <div class="panel-title">
                     Responsibility
                 </div>
                 <div class="panel-subtitle">
-                    Here at Tanglin, we help our students develop a sense of responsibility for the environment.
-                    Recently, we introduced many new recycling bins around the school so the waste that we produce
-                    is recycled responsibly.
+                    Here at Tanglin, we help our students develop a sense of responsibility for the environment. Recently, we introduced many
+                    new recycling bins around the school so the waste that we produce is recycled responsibly.
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid parallax" id="Purpose" style = "background-image: url(images/purpose.jpeg)">
+    <div class="container-fluid parallax" id="Purpose" style="background-image: url(images/purpose.jpeg)">
         <div class="row">
             <div class="col-12 col-md-6 panel">
                 <div class="panel-title  ">
                     Purpose
                 </div>
                 <div class="panel-subtitle">
-                    At Tanglin we believe that, with the right efforts, we can do our part and achieve our goal of saving
-                    the environment. We have recently introduced En-Trak, a platform that helps us understand and monitor our energy usage and its affects on the environment
+                    At Tanglin we believe that, with the right efforts, we can do our part and achieve our goal of saving the environment. We
+                    have recently introduced En-Trak, a platform that helps us understand and monitor our energy usage and
+                    its affects on the environment
                 </div>
             </div>
         </div>
@@ -134,9 +214,9 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    
-  
-    
+
+
+
 </body>
 
 </html>
