@@ -65,9 +65,8 @@ function startup() {
 
         lastScrollTop = st;
     }
-    disableScroll();
+    
     setTimeout(hidefirst, 2000); //wait 2.5 seconds to hide first fact. Fade out takes 1 second
-
     setTimeout(showSecond,3000 ); // show second after 3.5 seconds 
     //display for 2 seconds
     setTimeout(hideSecond,7500 ); // hide second after 6 seconds Fade out takes 1 second
@@ -76,7 +75,7 @@ function startup() {
     setTimeout(removeBlackScreen, 10500);
     setTimeout(showFinal, 11500);
     setTimeout(addNavbar, 11500);
-    enableScroll();
+    
   
     
 }
@@ -124,38 +123,3 @@ function addNavbar(){
     $("#nav").removeClass("indexNav").addClass("animated fadeIn visible")
 }
 
-// left: 37, up: 38, right: 39, down: 40,
-// spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
-var keys = {37: 1, 38: 1, 39: 1, 40: 1};
-
-function preventDefault(e) {
-  e = e || window.event;
-  if (e.preventDefault)
-      e.preventDefault();
-  e.returnValue = false;  
-}
-
-function preventDefaultForScrollKeys(e) {
-    if (keys[e.keyCode]) {
-        preventDefault(e);
-        return false;
-    }
-}
-
-function disableScroll() {
-  if (window.addEventListener) // older FF
-      window.addEventListener('DOMMouseScroll', preventDefault, false);
-  window.onwheel = preventDefault; // modern standard
-  window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
-  window.ontouchmove  = preventDefault; // mobile
-  document.onkeydown  = preventDefaultForScrollKeys;
-}
-
-function enableScroll() {
-    if (window.removeEventListener)
-        window.removeEventListener('DOMMouseScroll', preventDefault, false);
-    window.onmousewheel = document.onmousewheel = null; 
-    window.onwheel = null; 
-    window.ontouchmove = null;  
-    document.onkeydown = null;  
-}
